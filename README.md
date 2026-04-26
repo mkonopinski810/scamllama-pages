@@ -6,6 +6,6 @@ The iOS app is a simple, easy-to-read scam checker designed for everyone — esp
 
 - **Privacy policy:** [`/`](https://mkonopinski810.github.io/scamllama-pages/)
 - **Support / FAQ:** [`/support.html`](https://mkonopinski810.github.io/scamllama-pages/support.html)
-- **Contact:** info@harrieriq.com
+- **Contact:** info@luelma.com
 
 The application source code is maintained in a separate private repository.
