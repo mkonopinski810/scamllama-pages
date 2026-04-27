@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Open Messages Settings</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(180deg, #122242 0%, #21896B 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+        p  { font-size: 19px; opacity: 0.9; line-height: 1.5; max-width: 480px; margin-bottom: 28px; }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #122242;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 22px 36px;
+            border-radius: 18px;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+            min-width: 280px;
+        }
+        .small { font-size: 14px; opacity: 0.7; margin-top: 32px; max-width: 480px; }
+    </style>
+</head>
+<body>
+    <h1>One Last Tap</h1>
+    <p>Tap the button below. iPhone will ask if you want to open Settings — tap <strong>Open</strong>, then turn on <strong>Scam Llama</strong> under Unknown &amp; Spam.</p>
+    <a class="btn" href="App-Prefs:root=MESSAGES">📱  Open Messages Settings</a>
+    <p class="small">If nothing happens when you tap, your iPhone is on a newer version of iOS that has changed how this works. In that case, open Settings yourself, tap Messages, then Unknown &amp; Spam.</p>
+
+    <script>
+        // Auto-tap on load (iOS may block, that's fine — the button still works)
+        setTimeout(function() {
+            window.location.href = 'App-Prefs:root=MESSAGES';
+        }, 250);
+    </script>
+</body>
+</html>
